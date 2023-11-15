@@ -1,7 +1,7 @@
 {
-  "name": "@suhailakhtar/test",
-  "version": "0.0.3",
-  "description": "TypeScript NPM Module Boilerplate",
+  "name": "@suhailakhtar/axios-curlirize",
+  "version": "1.0.0",
+  "description": "Curl output of Axios API calls",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -11,14 +11,14 @@
     "lint:fix": "eslint src --fix --ext .js,.ts",
     "test": "jest --config jest.config.js",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
+    "prepublishOnly": "",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gitSambhal/ts-npm-package-boilerplate.git"
+    "url": "git+https://github.com/gitSambhal/axios-curlirize.git"
   },
   "keywords": [
     "boilerplate",
@@ -27,9 +27,9 @@
   "author": "Suhail Akhtar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gitSambhal/ts-npm-package-boilerplate/issues"
+    "url": "https://github.com/gitSambhal/axios-curlirize/issues"
   },
-  "homepage": "https://github.com/gitSambhal",
+  "homepage": "https://github.com/gitSambhal/axios-curlirize",
   "devDependencies": {
     "@types/jest": "29.4.0",
     "@typescript-eslint/eslint-plugin": "5.54.0",
@@ -45,6 +45,7 @@
     "lib/**/*"
   ],
   "dependencies": {
-    "@suhailakhtar/test": "^0.0.3"
+    "@suhailakhtar/test": "^0.0.3",
+    "axios": "^1.6.2"
   }
 }
